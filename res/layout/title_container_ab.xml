@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="210dp"
+    android:layout_height="match_parent"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:background="@android:color/transparent" >
+
+    <EditText
+        android:id="@+id/titleNoteEditText"
+        android:layout_width="210dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:textCursorDrawable="@null"
+        android:ems="10"
+        android:singleLine="true" 
+        android:focusable="false"
+        >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
