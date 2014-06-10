@@ -137,6 +137,9 @@ public class NoteEditorActivity extends Activity {
 	public boolean onPrepareOptionsMenu(Menu menu) {
 		
 		EditText content = (EditText) findViewById(R.id.noteText);
+		if(content.getLineCount()>1){
+			note.setSelfTitle(true);
+		}
 		if(!note.isSelfTitle()){
 			titleText = (EditText) menu.findItem(R.id.TitleContainer).getActionView().findViewById(R.id.titleNoteEditText);
 			titleText.setText(content.getText().toString());;
